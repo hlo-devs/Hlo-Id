@@ -1,0 +1,123 @@
+button{
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.log-in-button{
+	width: 70%;
+}
+
+.log-in-button h3{
+	text-align: center;
+}
+
+.log-in-button button {
+	display: inline-block;
+	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+	border: 1px solid white;
+	border-radius: 2rem;
+	margin-right: 2%;
+	background-color: white;
+	color: #ff4587;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	font-weight: 800;
+    margin-top: 5%;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.log-in-button button:hover {
+	border: 1px solid white;
+	background-color: transparent;
+	color: white;
+	text-decoration: none;
+}
+
+.basic-7{
+    text-align: center;
+}
+
+.basic-7 h3{
+	text-align: center;
+	margin-top: 2%;
+}
+
+.basic-7 a {
+	display: none;
+	padding: .375rem 2.25rem 1.375rem 2.25rem;
+	border: 1px solid #ff4587;
+	border-radius: 2rem;
+	background-color: #ff4587;
+	color: white;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+    margin-top: 5%;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.basic-7 button:hover {
+	border: 1px solid #ff4587;
+	background-color: transparent;
+	color: #ff4587;
+	text-decoration: none;
+}
+
+.heading-img{
+    width: 150%;
+    margin-top: 5%;
+    border-radius: 45px;
+}
+
+
+.img-fluid{
+    border-radius: 30px;
+}
+
+.form-group-dob {
+	position: relative;
+	margin-bottom: 1.25rem;
+	width: 100%;
+}
+
+.label-control-dob {
+	position: absolute;
+	top: .5rem;
+	left: 1.375rem;
+	color: #e8e7e7;
+	opacity: 1;
+	font-size: 0.875rem;
+	line-height: 1.375rem;
+	cursor: text;
+	transition: all 0.2s ease;
+}
+
+.form-control-input-dob:focus + .label-control-dob,
+.form-control-input-dob.notEmpty + .label-control-dob,
+.form-control-textarea:focus + .label-control-dob,
+.form-control-textarea.notEmpty + .label-control-dob {
+	top: 0.125rem;
+	opacity: 1;
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+.form-control-input-dob,
+.form-control-select {
+	display: block; /* needed for proper display of the label in Firefox, IE, Edge */
+	width: 100%;
+	padding-top: 1.4rem;
+	padding-bottom: 0.0625rem;
+	padding-left: 1.3125rem;
+	border: 1px solid #726e83;
+	border-radius: 0.375rem;
+	background-color: #393a3c;
+	color: #e8e7e7;
+	font-size: 0.875rem;
+	line-height: 1.875rem;
+	transition: all 0.2s;
+	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+}
+

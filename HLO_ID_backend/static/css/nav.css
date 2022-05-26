@@ -1,0 +1,431 @@
+.basic-5 h2 {
+    margin-bottom: 4.25rem;
+}
+html{
+    overflow-x: hidden;
+}
+.col-lg-11 button{
+    display: inline-block;
+    padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+    border: 1px solid #e8e7e7;
+    border-radius: 2rem;
+    background-color: #ff4587;
+    color: #e8e7e7;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin-inline-end: 1%;
+    margin-top: 1%;
+}
+.col-lg-11 button:hover{
+    background-color: #282a2c;
+    color: #ff4587;
+    border: 1px solid #ff4587;
+}
+.log-in-button button{
+    display: inline-block;
+    padding: 1.375rem 2.25rem 1.375rem 2.25rem;
+    border: 1px solid #e8e7e7;
+    border-radius: 2rem;
+    background-color: #e8e7e7;
+    color: #ff4587;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 0;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin-inline-end: 1%;
+    margin-top: 1%;
+}
+.log-in-button button:hover {
+    background-color: #282a2c;
+    color: #ff4587;
+    border: 1px solid #ff4587;
+}
+.log-in-button h3{
+    margin-left: 15%;
+}
+.heading-img{
+    margin-right: 10%;
+    width: 120%;
+}
+.img-fluid{
+    border-radius: 10%;
+}
+.top-logo{
+    z-index: 1;
+    position: absolute;
+    margin-left: 2%;
+    top: 5%;
+    width: 15%;
+    height: fit-content;
+}
+@media(max-width:920px){
+    .top-logo{
+        position: absolute;
+        width: 30%;
+        height: auto;
+    }
+}
+
+
+.head-bar img{
+    z-index: 20;
+    position: absolute;
+    height:min-content;
+    width: 12%;
+    height: 10%;
+    margin-left: 8%;
+    margin-top: 1%;
+    
+}
+
+.head-bar h2{
+    position: absolute;
+    margin-top: 7%;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+}
+.head-bar span{
+    color: #ff4587;
+}
+
+.hlo-image{
+    width: 25%;
+}
+
+.navbar {
+    z-index: 1;
+    position: fixed;
+	overflow: hidden;
+	background-color:none;
+	background-color:#393a3c;
+	width: 100%;
+    height: 7%;
+}
+
+.navbar .words{
+    width: 50%;
+    margin-left: 50%;
+}
+
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+    border-color: #393a3c;
+    text-align: center;
+	padding: 0% 0% 1% 1%;
+	text-decoration: none;
+	width: 20%;
+    transition: .1s;
+}
+
+.navbar a:hover{
+	font-size: 20px;
+    border: 1px #2323247c solid;
+    border-radius: 25px;
+    border-color: #393a3c;
+    background-color: #393a3c;
+}
+
+.dropdown {
+	overflow: hidden;
+    width: 20%;
+    display: inline-block;
+	border: 1px solid #ff4587;
+	border-radius: 8px;
+	background-color: #ff4587;
+	color: #ffffff;
+}
+
+.dropdown:hover {
+    background-color: transparent;
+    border-color: #ff4587;
+}
+
+.dropdown .dropbtn {
+	border: none;
+    color: white;
+	padding: 0px 0px 0px 0px;
+    width: 100%;
+    border: white 2px solid;
+    border-radius: 8px;
+    background-color: #ff4587;
+    transition: .2s;
+}
+
+.dropbtn:hover{
+    border-color: #ff4587;
+    color: #ff4587;
+    background-color: transparent;
+}
+
+.dropdown-content {
+    display: none;
+	position: fixed;
+	min-width: 10%;
+    padding-top: 1.5%;
+    background-color: transparent;
+}
+
+.dropdown-content a {
+	float: right;
+	font-size: 16px;
+	color: white;
+	width: 100%;
+	padding: 0% 10%;
+	margin-bottom: 10%;
+    margin-right: 7%;
+    text-align: center;
+	text-decoration: none;
+	border: 2px white solid;
+	border-radius: 8px;
+    background-color: #ff4587;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a:hover{
+	font-size: 16px;
+	color: #ff4587;
+    background-color: transparent;
+    border:2px #ff4587 solid;
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    animation-name: move;
+    animation-duration: .5s;
+}
+
+@keyframes move {
+    from {right: -11%;}
+    to {right: -.2%;}
+  }
+
+/*for both myself and org*/
+
+.row-po{
+    margin-top: 0%;
+	display: flex;
+}
+
+.post{
+    display: block;
+	width: 30%;
+	height: fit-content;
+	margin-left: 15%;
+	margin-top: 20%;
+	border-radius: 20px;
+}
+
+.cont-space{
+    margin-top: 20%;
+    width: 50%;
+}
+
+.g-recaptcha{
+	margin-bottom: 3%;
+}
+
+#message{
+    margin-left: 3%;
+}
+
+#message span{
+    font-size: 13px;
+}
+
+#message p{
+    margin-top: 1%;
+    line-height: 1%;
+    font-size: 10px;
+}
+
+.valid {
+    color: green;
+}
+  
+.valid:before {
+    position: relative;
+    right: 1%;
+    content: "✔";
+}
+  /* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+  
+.invalid:before {
+    position: relative;
+    right: 1%;
+    content: "✔";
+}
+
+
+/*Privacy*/
+.container-privacy{
+    text-align: center;
+    margin-top: 5%;
+}
+
+/*term page*/
+.term-content {
+    text-align: justify;
+}
+
+#menuToggle{
+    display: none;
+}
+
+
+@media (max-width: 920px) {
+    
+    .post{
+        display:block;
+    }
+    
+    .create{
+        display: none;
+    }
+    
+    .form-group select{
+        background-position: 80% 50%;
+    }
+    html{
+        overflow-y: hidden;
+    }
+
+    #menuToggle {
+        display: block;
+        position: fixed;
+        top: 1.75rem;
+        right: 1rem;
+        left: auto;
+        z-index: 4;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    
+    #menuToggle input {
+        display: block;
+        width: 1.5rem;
+        height: 2rem;
+        position: absolute;
+        top: -0.5rem;
+        left: -0.25rem;
+        cursor: pointer;
+        opacity: 0; /* hide this */
+        z-index: 4; /* and place it over the hamburger */
+        -webkit-touch-callout: none;
+    }
+    
+    #menuToggle span {
+        display: block;
+        position: relative;
+        z-index: 3;
+        width: 2.0625rem;
+        height: 0.25rem;
+        margin-bottom: 0.3125rem;
+        background: #ffffff;
+        border-radius: 0.125rem;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                    opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2) {
+          transform-origin: 0% 100%;
+    }
+    
+    /* Transform burger lines in crossmark */
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #ffffff;
+    }
+    
+    /* Hide the middle burger line */
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    /* Change direction of burger line */
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menu {
+        position: absolute;
+        width: 11rem;
+        margin: -6.25rem 0 0 -5.625rem;
+        padding: 7rem 2.75rem 2.1875rem 2.1875rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        background: #393a3c;
+        border: 1px solid #726e83;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased; /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(115%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu li {
+        margin-bottom: 0.5rem;
+        padding: 0.125rem 0;
+        color: #ffffff;
+        font-size: 1.125rem;
+    }
+    
+    #menu li a {
+        opacity: 0.7;
+        text-decoration: none;
+    }
+    
+    #menu li:active,
+    #menu li:hover a {
+        color: #ffffff;
+        opacity: 1;
+    }
+    
+    #menu li.sub-menu {
+        margin-left: 0.5rem;
+        margin-bottom: 0.125rem;
+        font-size: 1rem;
+    }
+    
+    #menuToggle input:checked ~ ul {
+        transform: none;
+    }
+
+    .head-bar img{
+        z-index: 20;
+        position: relative;
+        height:fit-content;
+        width: 30%;
+        height: fit-content;
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+
+    .post{
+        display: block;
+    }
+    .row-po{
+        width: 105%;
+    }
+    .footer-col.second{
+        display: none;
+    }
+}

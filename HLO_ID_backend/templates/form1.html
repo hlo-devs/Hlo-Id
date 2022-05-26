@@ -1,0 +1,28 @@
+{% extends 'sign-up-myself.html'%}
+{% block content%}
+<style>
+    form{
+        margin-top: 10%;
+    }
+</style>
+<br/>
+<form method = "POST" action="register">
+    
+    <h1>REGISTER</h1> <br> <br>
+{% csrf_token%}
+<label>ROLL NUMBER</label><br>
+<div class="textbox">
+     <input name = "num" type="number" placeholder="roll number">
+</div><br>
+<label>STUDENT NAME</label><br>
+<div class="textbox">
+    <input type="text" placeholder="student name" name="name">
+</div><br>
+<div class="d-flex justify-content-center mt-3 login_container">
+    <button type="submit" name="add" class="btn login_btn">ADD</button>&nbsp;&nbsp;&nbsp;
+    <button type="submit" name="edit" class="btn login_btn">EDIT</button>&nbsp;&nbsp;&nbsp;
+    <button type="submit" name="del" class="btn login_btn">DEL</button>
+</div>
+</form>
+
+{% endblock%}

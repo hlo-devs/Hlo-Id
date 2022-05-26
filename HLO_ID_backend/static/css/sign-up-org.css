@@ -1,0 +1,131 @@
+
+
+.form-group-otp {
+	position: relative;
+    display: flex;
+	margin-bottom: 1.25rem;
+	width: 100%;
+	opacity: 1;
+	transition: opacity 2s linear ;
+}
+
+.otp-but{
+    position: relative;
+	width: 30%;
+	height: 3.5rem;
+	border: 1px solid #ff4587;
+	border-radius: 0.375rem;
+	background-color: #ff4587;
+	color: #ffffff;
+	font-weight: 600;
+    margin-left: 40%;
+	font-size: 0.875rem;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.otp-but:hover{
+    border: 1px solid #ff4587;
+	background-color: transparent;
+	color: #ff4587;
+}
+
+.form-group-otp #inp {
+    position: relative;
+	width: 180%;
+	opacity: 1;
+}
+
+.form-group-otp button {
+    position: relative;
+	width: 30%;
+	height: 3.5rem;
+	border: 1px solid #ff4587;
+	border-radius: 0.375rem;
+	background-color: #ff4587;
+	color: #ffffff;
+	font-weight: 600;
+    margin-left: 40%;
+	font-size: 0.875rem;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.form-group-otp button:hover {
+	border: 1px solid #ff4587;
+	background-color: transparent;
+	color: #ff4587;
+}
+
+.but{
+	position: absolute;
+	border: none;
+	background-color: #393a3c;
+	margin-left: 90%;
+	margin-top: 2%;
+	border-radius: 25px;
+}
+
+.send-but button {
+	display: inline-block;
+	height: 3.125rem;
+	margin-right: 5%;
+	margin-left: 5%;
+	border: 1px solid #ff4587;
+	border-radius: 0.375rem;
+	background-color: #ff4587;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 0.875rem;
+	line-height: 0;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.form-group select {
+    position: relative;
+	/* you should keep these first rules in place to maintain cross-browser behavior */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+	background-color: #393a3c;
+	color: #e8e7e7;
+	width: 100%;
+	line-height: 350%;
+	border-radius: 5px;
+	border: 1px solid #726e83;
+    background-position: 40% 50%;
+    background-repeat: no-repeat;
+    outline: none;
+	font-size: 15px;
+	padding-inline-start: 2%;
+}
+
+.form-group select:hover{
+	border: 1px solid #a1a1a1;
+}
+
+/*************************/
+/*     Media Queries     */
+/*************************/	
+
+@media (max-width: 960px) {
+
+	html{
+		overflow-y: hidden;
+	}
+
+	.create{
+		display: none;
+	}
+
+	.top-bar img{
+		display: none;
+	}
+	.cont-space{
+		margin-left: 2%;
+	}
+}
+/* end of min-width 768px */

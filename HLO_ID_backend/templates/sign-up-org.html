@@ -1,0 +1,375 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="HLO ID" content="Creating Hlo ID is an absolutely quick process. Just click here to create one and get started . You shall use it in all applications from Hlo and also extend availability with games and apps of partners.">
+    <meta name="author" content="HLO">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="" />
+    <!-- website name -->
+    <meta property="og:site" content="" />
+    <!-- website link -->
+    <meta property="og:title" content="" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- to have large image post format in Twitter -->
+
+    <!-- Webpage Title -->
+    <title>For Organisation</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/fontawesome-all.css' %}" rel="stylesheet">
+    <link href="{% static 'css/swiper.css' %}" rel="stylesheet">
+    <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'css/sign-up-org.css' %}" rel="stylesheet">
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    <link href="{% static 'css/nav.css' %}" rel="stylesheet">
+
+
+    <!-- Favicon  -->
+    <link rel="icon" href="{% static 'images/favicon.png' %}">
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+    <div class="navbar">
+        <div class="words">
+            <a href="index">Home</a>
+            <a href="aboutus">About Us</a>
+            <a href="privacy">Privacy</a>
+            <a href="terms">Terms</a>
+            <div class="dropdown">
+                <button class="dropbtn">Sign Up</button>
+                <div class="dropdown-content">
+                    <a href="sign_up_myself">Myself</a>
+                    <a href="sign_up_org">Organization</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div id="menuToggle">
+            <input id="isAgeSelected" type="checkbox" />
+
+            <!-- Hamburger Icon -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <li><a href="index">Home</a></li>
+                <li><a href="aboutus">About Us</a></li>
+                <li><a href="privacy">Privacy</a></li>
+                <li><a href="terms">Terms</a></li>
+                <li><a href="sign_up_myself">For Myself</a></li>
+                <li><a href="sign_up_org">For Org</a></li>
+            </ul>
+        </div>
+        <!-- end of menuToggle-->
+    </nav>
+    <!-- end of nav -->
+    <style>
+        .head-bar h2 {
+            position: absolute;
+            margin-top: 7%;
+            text-align: center;
+            width: 100%;
+            font-size: 40px;
+        }
+        
+        .head-bar span {
+            color: #ff4587;
+        }
+        
+         ::-webkit-calendar-picker-indicator {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%23bbbbbb" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+        }
+    </style>
+    <div class="head-bar">
+        <a href="{% static 'sign-up-org.html' %}">
+            <img class="fav-logo" src="{% static 'images/output-onlinepngtools.png' %}" alt="alternative"></a>
+        <h2 class="create">Let's own a <span>HLO ID</span>entification</h2>
+    </div>
+    <div method="POST" action="sign_up_myself">
+        <div class="ex-form-2 mb-6">
+            <div class="container">
+                <div class="row-po">
+                    <div class="cont-space">
+                        <!-- Log In Form -->
+                        <form id="form_org_data" method="POST" data-toggle="validator" data-focus="false">
+                            <div class="form-group">
+                                <select name="organization" lass="selection ">
+                                    <option selected disabled>&nbsp;&nbsp;Select Organization</option>
+                                    <option>&nbsp;&nbsp;Public company</option>
+                                    <option>&nbsp;&nbsp;Self-employed</option>
+                                    <option>&nbsp;&nbsp;Goverment agency</option>
+                                    <option>&nbsp;&nbsp;Nonprofit</option>
+                                    <option>&nbsp;&nbsp;Sole proprietorship</option>
+                                    <option>&nbsp;&nbsp;Partnership</option>
+                                </select>
+                                <div class="help-block with-errors "></div>
+                            </div>
+                            <div class="form-group ">
+                                <input name="domain_name" type="text " class="form-control-input " id="domain " required>
+                                <label class="label-control " for="lemail ">Domain Name</label>
+                                <div class="help-block with-errors "></div>
+                            </div>
+                            <div class="form-group ">
+                                <input name="user_id" type="text " class="form-control-input " id="hlo-id" required>
+                                <label class="label-control " for="lpassword ">HLO ID (Username)</label>
+                                <div class="help-block with-errors "></div>
+                            </div>
+                            <div class="form-group">
+                                <button class="but" type="button" onclick="hid()">
+                                <img class="eye" onclick="imagefun()" id="getImage" src="{% static 'images/c-eye.png' %}"></button>
+                                <input type="password" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one 
+                                uppercase and lowercase letter, and at least 8 or more characters" class="form-control-input" id="password" required>
+                                <label class="label-control" for="lpassword">Password</label>
+                                <div id="message" style="display: none;">
+                                    <span>Password must contain the following:</span>
+                                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                                    <p id="capital" class="invalid">A <b>uppercase</b> letter</p>
+                                    <p id="number" class="invalid">A <b>number</b></p>
+                                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="but" type="button" onclick="hide()">
+                                    <img class="eye" onclick="imagefu()" id="getImag" src="{% static 'images/c-eye.png' %}"></button>
+                                <input type="password" class="form-control-input" id="con-pass" required>
+                                <label class="label-control" for="lpassword">Confirm Password</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group ">
+                                <button type="submit " href="{% static 'Otp.html' %} " class="form-control-submit-button ">Sign Up</button>
+                            </div>
+                            <div class="form-message ">
+                                <div id="lmsgSubmit " class="h3 text-center hidden "></div>
+                            </div>
+                        </form>
+                        <!-- end of log in form -->
+                    </div>
+                    <!-- end of col -->
+                    <img class="post " src="../static/images/post2.png">
+                </div>
+                <!-- end of row -->
+            </div>
+            <!-- end of container -->
+        </div>
+        <!-- end of ex-form-21 -->
+    </div>
+    <!-- end of form -->
+    <script>
+        function hid() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+
+        function imagefun() {
+            var Image_Id = document.getElementById('getImage');
+            if (Image_Id.src.match("{% static 'images/eye.png' %}")) {
+                Image_Id.src = "{% static 'images/c-eye.png' %}";
+            } else {
+                Image_Id.src = "{% static 'images/eye.png' %}";
+            }
+        }
+    </script>
+    <script>
+
+        let timeout;
+
+        // traversing the DOM and getting the input and span using their IDs
+
+        let password = document.getElementById('PassEntry')
+        let strengthBadge = document.getElementById('StrengthDisp')
+
+        // The strong and weak password Regex pattern checker
+
+        let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+        let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
+
+        function StrengthChecker(PasswordParameter){
+
+            // We then change the badge's color and text based on the password strength
+
+            if (strongPassword.test(PasswordParameter)) {
+                strengthBadge.style.backgroundColor = "green"
+                strengthBadge.textContent = 'Strong'
+            } else if (mediumPassword.test(PasswordParameter)){
+                strengthBadge.style.backgroundColor = 'blue'
+                strengthBadge.textContent = 'Medium'
+            } else {
+                strengthBadge.style.backgroundColor = 'red'
+                strengthBadge.textContent = 'Weak'
+            }
+        }
+
+        // Adding an input event listener when a user types to the  password input
+
+        password.addEventListener("input", () => {
+
+            //The badge is hidden by default, so we show it
+
+        strengthBadge.style.display= 'block'
+        clearTimeout(timeout);
+
+            //We then call the StrengChecker function as a callback then pass the typed password to it
+
+        timeout = setTimeout(() => StrengthChecker(password.value), 500);
+
+
+            //Incase a user clears the text, the badge is hidden again
+
+        if(password.value.length !== 0){
+            strengthBadge.style.display != 'block'
+        } else{
+            strengthBadge.style.display = 'none'
+        }
+        });
+    </script>
+    <script>
+        var myInput = document.getElementById("password");
+        var letter = document.getElementById("letter");
+        var capital = document.getElementById("capital");
+        var number = document.getElementById("number");
+        var length = document.getElementById("length");
+
+        // When the user clicks on the password field, show the message box
+        myInput.onfocus = function() {
+            document.getElementById("message").style.display = "block";
+        }
+
+        // When the user clicks outside of the password field, hide the message box
+        myInput.onblur = function() {
+            document.getElementById("message").style.display = "none";
+        }
+
+        // When the user starts to type something inside the password field
+        myInput.onkeyup = function() {
+            // Validate lowercase letters
+            var lowerCaseLetters = /[a-z]/g;
+            if (myInput.value.match(lowerCaseLetters)) {
+                letter.classList.remove("invalid");
+                letter.classList.add("valid");
+            } else {
+                letter.classList.remove("valid");
+                letter.classList.add("invalid");
+            }
+
+            // Validate capital letters
+            var upperCaseLetters = /[A-Z]/g;
+            if (myInput.value.match(upperCaseLetters)) {
+                capital.classList.remove("invalid");
+                capital.classList.add("valid");
+            } else {
+                capital.classList.remove("valid");
+                capital.classList.add("invalid");
+            }
+
+            // Validate numbers
+            var numbers = /[0-9]/g;
+            if (myInput.value.match(numbers)) {
+                number.classList.remove("invalid");
+                number.classList.add("valid");
+            } else {
+                number.classList.remove("valid");
+                number.classList.add("invalid");
+            }
+
+            // Validate length
+            if (myInput.value.length >= 8) {
+                length.classList.remove("invalid");
+                length.classList.add("valid");
+            } else {
+                length.classList.remove("valid");
+                length.classList.add("invalid");
+            }
+        }
+    </script>
+    <!-- Footer -->
+    <div class="footer bg-black ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <div class="footer-col first ">
+                        <h6>HLO</h6>
+                        <img class="hlo-image " src="{% static 'images/favicon.png' %} " alt="alternative ">
+                    </div>
+                    <!-- end of footer-col -->
+                    <div class="footer-col second ">
+                        <h6>A ROOK VENTURE</h6>
+                        <ul class="list-unstyled li=space-lg p-large ">
+                            <img class="logo-rook " src="{% static 'images/logo_rook.png' %} " alt="alternative ">
+                        </ul>
+                    </div>
+                    <!-- end of footer-col -->
+                    <div class="footer-col third ">
+                        <span class="fa-stack ">
+                            <a href="https://twitter.com/HloDevs ">
+                                <i class="fas fa-circle fa-stack-2x "></i>
+                                <i class="fab fa-twitter fa-stack-1x "></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack ">
+                            <a href="https://www.linkedin.com/company/hlodevs/ ">
+                                <i class="fas fa-circle fa-stack-2x "></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x "></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack ">
+                            <a href="https://instagram.com/hlodevs ">
+                                <i class="fas fa-circle fa-stack-2x "></i>
+                                <i class="fab fa-instagram fa-stack-1x "></i>
+                            </a>
+                        </span>
+                        <p class="p-small ">We would love to hear from you <a href="mailto:yourfriends@hlodev.com "><strong>yourfriends@hlodev.com</strong></a></p>
+                        <p class="p-small ">Copyright © HLO</a>
+                        </p>
+                    </div>
+                    <!-- end of footer-col -->
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+    </div>
+    <!-- end of footer -->
+    <!-- end of footer -->
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.min.js' %} "></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="{% static 'js/bootstrap.min.js' %} "></script>
+    <!-- Bootstrap framework -->
+    <script src="{% static 'js/jquery.easing.min.js' %} "></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="{% static 'js/swiper.min.js' %} "></script>
+    <!-- Swiper for image and text sliders -->
+    <script src="{% static 'js/jquery.magnific-popup.js' %} "></script>
+    <!-- Magnific Popup for lightboxes -->
+    <script src="{% static 'js/morphext.min.js' %} "></script>
+    <!-- Morphtext rotating text in the header -->
+    <script src="{% static 'js/scripts.js' %} "></script>
+    <!-- Custom scripts -->
+</body>
+
+</html>

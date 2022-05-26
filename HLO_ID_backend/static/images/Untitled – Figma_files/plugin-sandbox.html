@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script>
+      var messageHandler = (event) => {
+        var pluginIframeElement = document.getElementById("plugin-iframe")
+        if (pluginIframeElement && event.source === pluginIframeElement.contentWindow) {
+          parent.postMessage({ origin: event.origin, data: event.data }, window.location.origin)
+        }
+      }
+      window.addEventListener("message", messageHandler)
+      window.__FIGMA_PLUGIN_SANDBOX_PAGE_LOADED = true
+    </script>
+  </head>
+  <body><iframe name="Inner Plugin Iframe" id="plugin-iframe" allow="camera 'none'; microphone 'none'; display-capture 'none'" src="data:text/html;base64,PHNjcmlwdD4KICBvbm1lc3NhZ2UgPSAoZXZlbnQpID0+IHsKICAgIGlmIChldmVudC5zb3VyY2UgPT09IHBhcmVudC5wYXJlbnQgJiYgZXZlbnQub3JpZ2luID09PSAiaHR0cHM6Ly93d3cuZmlnbWEuY29tIikgewogICAgICBkb2N1bWVudC53cml0ZSgiPHNjcmlwdD4iICsgIlxuZG9jdW1lbnQuY2xvc2UoKTtcbmRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ2tleWRvd24nLCAoZSkgPT4ge1xuICBpZiAoZS5rZXlDb2RlID09PSA4MCAvKiBQICovICYmICFlLnNoaWZ0S2V5ICYmIGUuYWx0S2V5ICYmIGUuY3RybEtleSAmJiAhZS5tZXRhS2V5KSB7XG4gICAgLy8gSGFuZGxlIHRoZSBwbHVnaW4gcmUtcnVuIHNob3J0Y3V0XG4gICAgcGFyZW50LnBvc3RNZXNzYWdlKCckSU5URVJOQUxfRE9fTk9UX1VTRSRSRVJVTl9QTFVHSU4kJywgJyonKVxuICAgIGUuc3RvcFByb3BhZ2F0aW9uKClcbiAgICBlLnN0b3BJbW1lZGlhdGVQcm9wYWdhdGlvbigpXG4gIH0gZWxzZSBpZiAoZmFsc2UpIHtcbiAgICAvLyBIYW5kbGUgU2VsZWN0IEFsbCwgVW5kbyBhbmQgUmVkbyBpbiB0aGUgZGVza3RvcCBhcHBcbiAgICBpZiAoZS5rZXlDb2RlID09PSA2NSAvKiBBICovICYmIGUuY3RybEtleSkge1xuICAgICAgZG9jdW1lbnQuZXhlY0NvbW1hbmQoJ3NlbGVjdEFsbCcpXG4gICAgfSBlbHNlIGlmIChlLmtleUNvZGUgPT09IDkwIC8qIFogKi8gJiYgZS5jdHJsS2V5KSB7XG4gICAgICBpZiAoZS5zaGlmdEtleSkge1xuICAgICAgICBkb2N1bWVudC5leGVjQ29tbWFuZCgncmVkbycpXG4gICAgICB9IGVsc2Uge1xuICAgICAgICBkb2N1bWVudC5leGVjQ29tbWFuZCgndW5kbycpXG4gICAgICB9XG4gICAgfVxuICB9XG59LCB0cnVlKVxuIiArICI8LyIgKyAic2NyaXB0PiIgKyBldmVudC5kYXRhKQogICAgfQogIH0KPC9zY3JpcHQ+" style="display: block; margin: 0px; border: medium none; padding: 0px; width: 100%; height: 100%;"></iframe></body></html>
